@@ -19,9 +19,9 @@ int main(int argc, char *argv[]) {
     		puts("No file extension found.");
 	} else if(strcmp(ext+1, "mp3") == 0 || 
 		  strcmp(ext+1, "wav") == 0 ||
-		  strcmp(ext+1, "flav") == 0 ) {
+		  strcmp(ext+1, "flac") == 0 ) {
     		ma_engine_play_sound(&engine, argv[1], NULL);
-                printf("Press enter to stop playing.\n");
+                printf("Press enter to stop playing.");
                 getchar();
 	} else { puts("Unknown/Unsupported file extension"); }
 	} else {
